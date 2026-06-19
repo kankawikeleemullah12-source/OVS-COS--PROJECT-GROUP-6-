@@ -9,3 +9,10 @@ def run_dictionary_pipeline():
         "BIO108": 0,
         "COS102": 0
     }
+counter = 0
+
+    with open("grades.csv", "r") as data_source:
+        parsed_records = csv.DictReader(
+            data_source,
+            skipinitialspace=True
+        )
