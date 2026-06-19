@@ -21,3 +21,5 @@ for entry in parsed_records:
                 metrics[course] += int(entry[course])
 
             counter += 1
+with open("report.txt", "w") as log:
+        log.write("============ STUDENT PERFORMANCE REPORT ============\n")
