@@ -10,10 +10,10 @@ def run_dictionary_pipeline():
         "COS102": 0
     }
     counter = 0
-    
-    with open("grades.csv", "r") as data_source:
-        parsed_records = csv.DictReader(data_source)
-        for entry in parsed_records:
+with open("grades.csv", "r") as data_source:
+    parsed_records = csv.DictReader(
+        data_source,
+        skipinitialspace=True)
             # Dynamically add scores to each course match
             for course in metrics:
                 metrics[course] += int(entry[course])
