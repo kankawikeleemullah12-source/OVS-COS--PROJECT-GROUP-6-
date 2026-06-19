@@ -23,3 +23,7 @@ for entry in parsed_records:
             counter += 1
 with open("report.txt", "w") as log:
         log.write("============ STUDENT PERFORMANCE REPORT ============\n")
+    
+log.write(f"Total Students Processed: {counter}\n\n")
+
+        for course, aggregated_sum in metrics.items():
