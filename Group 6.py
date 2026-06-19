@@ -40,4 +40,4 @@ print("Report successfully generated as 'report.txt'!")
 
 print("\n--- Displaying Generated Report ---")
 with open("report.txt") as file_reader:
-    print(file_reader.read())11
+    print(file_reader.read())
