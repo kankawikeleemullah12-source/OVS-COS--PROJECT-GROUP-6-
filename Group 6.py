@@ -27,3 +27,8 @@ with open("report.txt", "w") as log:
 log.write(f"Total Students Processed: {counter}\n\n")
 
         for course, aggregated_sum in metrics.items():
+log.write("====================================================\n")
+
+run_dictionary_pipeline()
+
+print("Report successfully generated as 'report.txt'!")
