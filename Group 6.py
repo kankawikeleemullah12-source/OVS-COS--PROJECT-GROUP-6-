@@ -27,9 +27,9 @@ with open("report.txt", "w") as log:
 log.write(f"Total Students Processed: {counter}\n\n")
 
         for course, aggregated_sum in metrics.items():
-log.write("====================================================\n")computed_average = aggregated_sum / counter
+            computed_average = aggregated_sum / counter
             log.write(f"Average {course} Score: {computed_average:.2f}\n")
-
+log.write("====================================================\n")
 run_dictionary_pipeline()
 
 print("Report successfully generated as 'report.txt'!")print("\n--- Displaying Generated Report ---")
